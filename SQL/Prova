@@ -1,0 +1,65 @@
+SELECT * 
+FROM 
+	cliente;
+
+
+SELECT 
+	nome,data_nasc
+FROM
+	cliente;
+
+SELECT *
+FROM
+	vendas
+WHERE
+	valor_venda > 550;
+
+SELECT *
+FROM
+	vendas
+WHERE
+	valor_venda < 550;
+
+SELECT *
+FROM
+	vendas
+WHERE
+	idCliente = 1;
+SELECT * 
+FROM 
+	produto;
+
+DELETE
+FROM
+	produto
+WHERE
+	produto = "mesa redonda";
+ALTER TABLE 
+	vendas 
+ADD  
+desconto FLOAT NULL;
+
+INSERT INTO
+	vendas(desconto)
+VALUES
+(0.10);
+
+SELECT *
+FROM
+	vendas
+WHERE
+	desconto = 0.10;
+
+SELECT *
+FROM
+	cliente
+WHERE
+	data_nasc 
+BETWEEN 
+	'19900101' AND '19980101';
+UPDATE 
+	produto
+SET 
+	valor = 120 
+WHERE
+	descricao - "cadeira simples";
