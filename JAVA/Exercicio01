@@ -1,0 +1,23 @@
+package pacote;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		
+	
+		int A, B, AUX;
+
+		A = 10;
+		B = 20;
+
+		System.out.println("A = " + A + "  B = " + B);
+
+		AUX = B;
+		B = A;
+		A = AUX;
+
+		System.out.println("A = " + A + "  B = " + B);
+
+	}
+
+}
